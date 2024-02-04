@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastro de Telefones</title>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Cadastro de Telefones</h1>
+    </header>
+
+    <form id="contactForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" required>
+
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="Digite apenas números" required>
+
+      <button type="button" onclick="addContact()">Cadastrar</button>
+    </form>
+
+    <table id="contactsTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>Desenvolvido por: Thiago Almeida</p>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
